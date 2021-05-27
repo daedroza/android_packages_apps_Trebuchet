@@ -42,8 +42,7 @@ public class LineageUtils {
 
             final BiometricPrompt bp = new BiometricPrompt.Builder(context)
                     .setTitle(title)
-                    .setAllowedAuthenticators(Authenticators.BIOMETRIC_STRONG |
-                                              Authenticators.DEVICE_CREDENTIAL)
+                    .setAllowedAuthenticators(Authenticators.DEVICE_CREDENTIAL)
                     .build();
 
             final Handler handler = new Handler(Looper.getMainLooper());
